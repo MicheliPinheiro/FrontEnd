@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa de trabalho</title>
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+        
+    body{
+        font-family: 'Montserrat', sans-serif;
+        height: 400px;
+        font-weight: bold;
+        color: Black;
+    }
+    .plano {
+        background-color: rgb(235, 230, 230);
+        border: 2px solid rgb(12, 4, 34);
+        border-radius: 10px;
+        margin: 50px auto;
+        min-height: 400px;
+        overflow: auto;
+        position: center;
+        width: 200px;
+        text-align: center;
+    }
+    .plano__sessao{
+        border-bottom: 2px solid rgb(12, 4, 34);
+    }
+    .preco__valor{
+        color: rgb(20, 10, 156);
+        font-size:xxx-large;
+        font-weight: bolder;
+    }
+    .preco__moeda{
+        color: rgb(20, 10, 156);
+    }
+    .preco__total{
+        font-size: small;
+    }
+    .lista{
+        padding-inline-start: 0px;
+        border: black;
+        height: 400px;
+        margin: 20px
+    }
+    .lista__item{
+        margin: 20px;
+    }
+    .botao{
+        background-color: #93d86b;
+        color: #ffffff;
+        font-weight: 700;
+        border-radius: 50px;
+        align-items: center;
+        height: 25px;
+        width: 120px;
+        font-family:'Montserrat', sans-serif;
+        border-style:none;
+        margin-bottom: 5px;
+    }
+    </style>
+</head>
+<body>    
+    <!-- O código HTML pode ser alterado se considerarem necessário. -->
+    <div class="plano">
+        <div class="plano__sessao">
+            <p class="preco">
+                <span font-size: 24px class="preco__cambio">R$</span>
+                <span class="preco__valor">632</span>
+                <span class="preco__moeda">,39</span>
+            </p>
+            <p class="preco__total">Valor anual: R$ 5.465,09</p>
+            <button class="botao">COMPRAR</button>
+        </div>
+        <ul class="lista" type="none">
+            <li class="lista__item">
+                <img src="./imagens/checked.png" alt="Ícone verificado verde"></li>
+            <li class="lista__item">100km</li>
+            <li class="lista__item">Com ar - 7 dias</li>
+            <li class="lista__item">
+                <img src="./imagens/checked.png" alt="Ícone verificado verde">
+            </li>
+            <li class="lista__item">
+                <img src="./imagens/checked.png" alt="Ícone verificado verde">
+            </li>
+            <li class="lista__item">
+                <img src="./imagens/unchecked.png" alt="Ícone de um X vermelho">
+            </li>
+            <li class="lista__item">R$ 50 mil</li>
+        </ul>
+    </div>
+</body>
+</html>
